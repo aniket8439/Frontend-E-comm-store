@@ -43,7 +43,7 @@ const ManageProducts = () => {
       <div className="row">
         <div className="col-12">
           <h2 className="text-center text-white my-3">Total 3 products</h2>
-
+          
           {products.map((product, index) => {
             return (
               <div key={index} className="row text-center mb-2 ">
@@ -53,7 +53,7 @@ const ManageProducts = () => {
                 <div className="col-4">
                   <Link
                     className="btn btn-success"
-                    to={`/admin/product/update/productId`}
+                    to={`/admin/product/update/${product._id}`}
                   >
                     <span className="">Update</span>
                   </Link>
