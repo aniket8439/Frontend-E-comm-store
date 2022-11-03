@@ -8,10 +8,10 @@ export const createOrder = (userId, token, orderdata) => {
                 Authorization: `Bearer ${token}`
             },
             body: JSON.stringify({
-                order: orderData
+                order: orderdata
             })
         }).then(response => {
-            returnResponse.json();
+            return Response.json();
         })
         .catch(err => console.log(err));
 };
